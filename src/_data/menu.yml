@@ -117,3 +117,8 @@ docs:
   name: Documentation
   icon: fe fe-file-text
   url: docs/index.html
+
+regioncards:
+  name: Regions
+  icon: fe fe-home
+  url: regioncards.html
