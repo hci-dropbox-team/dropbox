@@ -1,30 +1,52 @@
 <div class="card">
-	<div class="card-tabs">
-		<a href="" class="card-tabs-item">
-			<h3 class="mb-1">72</h3>
-			<div class="text-uppercase text-success font-weight-bold h6 m-0 text-nowrap">Up to date</div>
-		</a>
-		<a href="" class="card-tabs-item">
-			<h3 class="mb-1">25</h3>
-			<div class="text-uppercase text-warning font-weight-bold h6 m-0 text-nowrap">Outdated</div>
-		</a>
-		<a href="" class="card-tabs-item active">
-			<h3 class="mb-1">2</h3>
-			<div class="text-uppercase text-danger font-weight-bold h6 m-0 text-nowrap">Danger</div>
-		</a>
+	<div class="card-header">
+		<h3 class="card-title">Packages in Box 11</h3>
 	</div>
-	<table class="table card-table">
+	<table id="js-table-sorted" class="table table-responsive table-striped table-vcenter card-table">
+		<thead>
 		<tr>
-			<td>
-				<strong><a href="javascript:void(0)" class="text-inherit">uglify-js</a></strong>
-			</td>
-			<td class="text-right">3.0.10</td>
+			<th>No.</th>
+			<th>Origin</th>
+			<th>Destination</th>
+			<th>Time Since Drop</th>
+			<th>Weight</th>
+
 		</tr>
+		</thead>
+		<tbody>
+
+		{% for package in site.data.packages %}
 		<tr>
-			<td>
-				<strong><a href="javascript:void(0)" class="text-inherit">moment</a></strong>
-			</td>
-			<td class="text-right">2.18.1</td>
-		</tr>
+				<td><span class="text-muted">{{ package.number }}</span></td>
+				<td>{{ package.origin }}</td>
+				<td>
+					{{ package.destination }}
+				</td>
+				<td>
+					{{ package.timesince }}
+				</td>
+				<td>
+					{{ package.weight }}
+				</td>
+			</tr>
+		{% endfor %}
+		</tbody>
 	</table>
 </div>
+	
+<script>
+requirejs(['tablesorter', 'jquery'], function(tablesorter, $) {
+	$(document).ready(function(){
+		$('#js-table-sorted').tablesorter({
+			sortList: [[5,1]],
+			cssHeader: 'table-header',
+			cssAsc: 'table-header-asc',
+			cssDesc: 'table-header-desc',
+			headers: {
+				1: { sorter: false },
+				2: { sorter: false }
+			}
+		});
+	});
+});
+</script>

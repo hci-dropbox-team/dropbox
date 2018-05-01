@@ -1,33 +1,57 @@
 - title: Eastern
   status: green
-  info: The eastern united states
+  info: The Eastern United States
   url: /region.html
   districts:
     - page: Bostonian
-      status: green
-      info: the bostonian region
+      status: orange
+      info: The New England States
       url: /district.html
       locations:
         - page: ORHA
-          status: green
-          info: location number 16
+          status: orange
+          info: Station 16 in MA
           url: /location.html
         - page: BEDA
           status: orange
-          info: location number 21
+          info: Station 21 in MA
           url: /location.html
         - page: NZWA
           status: green
-          info: location number 23
+          info: Station 23 in MA
           url: /location.html
         - page: BVYA
           status: green
-          info: location number 26
+          info: Station 26 in MA
           url: /location.html
-    
+        - page: PVDA
+          status: green
+          info: Station 29 in RI
+          url: /location.html
+        - page: PSMA
+          status: green
+          info: Station 38 in NH
+          url: /location.html
+        - page: BGRA
+          status: green
+          info: Station 44 in ME
+          url: /location.html
+        - page: AUGA
+          status: green
+          info: Station 221 in ME
+          url: /location.html
+        - page: OWDA
+          status: green
+          info: Station 238 in MA
+          url: /location.html
+        - page: CEFA
+          status: green
+          info: Station 269 in MA
+          url: /location.html
+
     - page: Big Apple
       status: green
-      info: the big apple region!
+      info: New York City and surrounding cities
       url: /district.html
       locations:
         - page: NYCA
@@ -35,9 +59,20 @@
         - page: BEDA
           url: /location.html
 
+    - page: Capital
+      status: green
+      info: D.C. and surrounding cities
+      url: /district.html
+      locations:
+        - page: NYCA
+          url: /location.html
+        - page: BEDA
+          url: /location.html
+    
+
 - title: Western
   status: green
-  info: the western united states
+  info: The Western United States
   url: /region.html
   districts: 
     - page: Canyon
@@ -48,9 +83,10 @@
         - page: BTFA
           url: /location.html
 
+
 - title: Southern
   status: orange
-  info: the southern united states
+  info: The Southern United States
   url: /region.html
   districts: 
     - page: Southeast
@@ -63,7 +99,7 @@
 
 - title: Central
   status: green
-  info: the centrla united states
+  info: The Central United States
   url: /region.html
   districts: 
     - page: Three Rivers

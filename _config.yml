@@ -1,8 +1,8 @@
-title: Tabler
-description: tabler.github.io - a responsive, flat and full featured admin template
+title: Dropboxer
+description: FedEx Dropbox Diagnostics
 
 source: src
-host: 0.0.0.0
+host: 192.168.0.10
 
 plugins:
   - jekyll-tidy
@@ -32,7 +32,7 @@ exclude:
 
 collections:
   docs:
-    output: true
+    output: false
 
 defaults:
   - scope:
@@ -200,8 +200,8 @@ social-buttons:
     icon: fa fa-bitbucket
     name: Bitbucket
 
-google-maps-key: AIzaSyBEJy4UvF-JfcNciWlvlznyDlUckcspiD4
-google-maps-url: https://maps.googleapis.com/maps/api/js?key=AIzaSyCOJwXN0eoyeFZ3cYtGzPLFw8zGhQ750Xk
+google-maps-key: AIzaSyD7vHmVcx-RMy0YAp1q5qbA1RwxMSxaR48
+google-maps-url: https://maps.googleapis.com/maps/api/js?key=AIzaSyD7vHmVcx-RMy0YAp1q5qbA1RwxMSxaR48
 
 theme-plugins:
   charts-c3:

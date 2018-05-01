@@ -20,11 +20,12 @@
 					</div>
 				</form>
 			{% elsif include.show-buttons %}
-				<a href="/location.html" class="btn btn-primary">Explore</a>
-				<label class="custom-switch m-0">
-					<input type="checkbox" name="icon-input" class="selectgroup-input">
-					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
-				</label>
+				<a href="{{ include.url }}" class="btn btn-primary btn-sm">Explore</a>
+			{% elsif include.show-switch %}
+			<label class="custom-switch m-0">
+				<input type="checkbox" value="1" class="custom-switch-input" checked>
+				<span class="custom-switch-indicator"></span>
+			</label>
 			{% elsif include.options %}
 				{{ include.options }}
 			{% else %}
@@ -56,9 +57,9 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
 		{% endif %}
 	</div>
-	{% if include.show-footer %}
+	{% if include.level %}
 	<div class="card-footer">
-		This is standard card footer
+			This favorite is a <strong>{{ include.level }}</strong>.
 	</div>
 	{% endif %}
 </div>

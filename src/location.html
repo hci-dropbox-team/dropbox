@@ -1,15 +1,38 @@
 ---
-title: Location Information
+title: Location ORHA
 layout: default
 menu: regioncards
+searchcontext: in ORHA boxes
+level: location
 ---
 
 
 <div class="container">
 
 	<div class="row row-cards">
-		<div class="col-md-16 col-xl-8">
-			{% include cards/boxes.html title=location.page status=location.status show-buttons=true body=location.info %}
+		<div class="col-xs-6 col-md-4">
+			{% include cards/location-overview.html page="ORHA" %}
+			
+			{% for chart in site.data.charts %}
+			{% if chart[1].location %}
+			{% assign data = chart[0] %}
+			{% assign key = 'chart-' | append: data %}
+				<div class="card">
+					<div class="card-header">
+						<h3 class="card-title">{{ chart[1].name }}</h3>
+					</div>
+					<div class="card-body">
+						<div id="{{ key }}" style="height: 16rem"></div>
+					</div>
+				</div>
+				{% include js-charts.html id=key data=data %}
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="col-xs-12 col-md-8">
+			{% include cards/boxes-sorted.html %}
 		</div>
 	</div>
+
+
 </div>
