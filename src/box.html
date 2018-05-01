@@ -1,0 +1,20 @@
+---
+title: Location Information
+layout: default
+menu: regioncards
+---
+
+
+<div class="container">
+
+	<div class="row row-cards">
+		<div class="col-md-8 col-xl-4">
+			{% include cards/boxes.html title=location.page status=location.status show-buttons=true body=location.info %}
+		</div>
+		{% for box in site.data.boxes %}
+		{% if box.location=="ORHA" %}
+
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>

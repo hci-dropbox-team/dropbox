@@ -1,0 +1,44 @@
+- number: 0001
+  capacity: 75%
+  battery: 50%
+  battery-icon: fa fa-battery-half
+  status: orange
+  location: ORHA
+  address: 4000 Fourth Street
+  last: 19 April 2018
+
+- number: 0011
+  capacity: 100%
+  battery: 25%
+  battery-icon: fa fa-battery-quarter
+  status: red
+  location: ORHA
+  address: 12345 Lane Lane
+  last: 19 April 2018
+
+- number: 0020
+  capacity: 20%
+  battery: 92%
+  battery-icon: fa fa-battery-4
+  status: green
+  location: ORHA
+  address: 44 Four Lane
+  last: 19 April 2018
+
+- number: 0034
+  capacity: 12%
+  battery: 95%
+  battery-icon: fa fa-battery-4
+  status: green
+  location: ORHA
+  address: 1000 Four Lane
+  last: 25 April 2018
+
+- number: 0702
+  capacity: 20%
+  battery: 78%
+  battery-icon: fa fa-battery-three-quarters
+  status: green
+  location: ORHA
+  address: 145 Yeven Drive
+  last: 25 April 2018

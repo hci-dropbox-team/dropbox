@@ -1,0 +1,25 @@
+---
+title: District Selection
+layout: default
+menu: regioncards
+---
+
+
+<div class="container">
+
+	<div class="row row-cards">
+		{% for region in site.data.regions %}
+		{% if region.title=="Eastern" %}
+		{% for district in region.districts %}
+		{% if district.page=="Bostonian" %}
+		{% for location in district.locations %}
+		<div class="col-md-3 col-xl-3">
+			{% include cards/locationcard.html title=location.page status=location.status show-buttons=true body=location.info %}
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% endfor %}
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>

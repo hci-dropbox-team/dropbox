@@ -1,0 +1,76 @@
+- title: Eastern
+  status: green
+  info: The eastern united states
+  url: /region.html
+  districts:
+    - page: Bostonian
+      status: green
+      info: the bostonian region
+      url: /district.html
+      locations:
+        - page: ORHA
+          status: green
+          info: location number 16
+          url: /location.html
+        - page: BEDA
+          status: orange
+          info: location number 21
+          url: /location.html
+        - page: NZWA
+          status: green
+          info: location number 23
+          url: /location.html
+        - page: BVYA
+          status: green
+          info: location number 26
+          url: /location.html
+    
+    - page: Big Apple
+      status: green
+      info: the big apple region!
+      url: /district.html
+      locations:
+        - page: NYCA
+          url: /location.html
+        - page: BEDA
+          url: /location.html
+
+- title: Western
+  status: green
+  info: the western united states
+  url: /region.html
+  districts: 
+    - page: Canyon
+      url: /district.html
+      locations:
+        - page: ZSYA
+          url: /location.html
+        - page: BTFA
+          url: /location.html
+
+- title: Southern
+  status: orange
+  info: the southern united states
+  url: /region.html
+  districts: 
+    - page: Southeast
+      url: /district.html
+      locations:
+        - page: RMGA
+          url: /location.html
+        - page: AVLA
+          url: /location.html
+
+- title: Central
+  status: green
+  info: the centrla united states
+  url: /region.html
+  districts: 
+    - page: Three Rivers
+      url: /district.html
+      locations:
+        - page: LNNA
+          url: /location.html
+        - page: PITA
+          url: /location.html
+

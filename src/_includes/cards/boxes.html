@@ -1,0 +1,52 @@
+<div class="card">
+	<div class="card-header">
+		<h3 class="card-title">Boxes</h3>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table card-table table-vcenter text-nowrap">
+			<thead>
+			<tr>
+				<th class="w-1">No.</th>
+				<th>Address</th>
+				<th>Capacity</th>
+				<th>Battery</th>
+				<th>Last Maintained</th>
+				<th>Urgency</th>
+				<th></th>
+				<th></th>
+			</tr>
+			</thead>
+
+			<tbody>
+			{% for box in site.data.boxes %}
+			<tr>
+				<td><span class="text-muted">{{ box.number }}</span></td>
+				<td><a href="box.html" class="text-inherit">{{ box.address }}</a></td>
+				<td>
+					{{ box.capacity }}
+				</td>
+				<td>
+					<i class="{{ box.battery-icon }}" data-toggle="tooltip" title="{{ box.battery }}"></i>
+				</td>
+				<td>
+					{{ box.last }}
+				</td>
+				<td>
+					<span class="status-icon bg-{{ box.status }}"></span> {{ box.status }}
+				</td>
+
+				<td class="text-right">
+					<a href="javascript:void(0)" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+				<td>
+					<a class="icon" href="javascript:void(0)">
+						<i class="fe fe-edit"></i>
+					</a>
+				</td>
+			</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
