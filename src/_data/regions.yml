@@ -1,0 +1,112 @@
+- title: Eastern
+  status: green
+  info: The Eastern United States
+  url: /region.html
+  districts:
+    - page: Bostonian
+      status: orange
+      info: The New England States
+      url: /district.html
+      locations:
+        - page: ORHA
+          status: orange
+          info: Station 16 in MA
+          url: /location.html
+        - page: BEDA
+          status: orange
+          info: Station 21 in MA
+          url: /location.html
+        - page: NZWA
+          status: green
+          info: Station 23 in MA
+          url: /location.html
+        - page: BVYA
+          status: green
+          info: Station 26 in MA
+          url: /location.html
+        - page: PVDA
+          status: green
+          info: Station 29 in RI
+          url: /location.html
+        - page: PSMA
+          status: green
+          info: Station 38 in NH
+          url: /location.html
+        - page: BGRA
+          status: green
+          info: Station 44 in ME
+          url: /location.html
+        - page: AUGA
+          status: green
+          info: Station 221 in ME
+          url: /location.html
+        - page: OWDA
+          status: green
+          info: Station 238 in MA
+          url: /location.html
+        - page: CEFA
+          status: green
+          info: Station 269 in MA
+          url: /location.html
+
+    - page: Big Apple
+      status: green
+      info: New York City and surrounding cities
+      url: /district.html
+      locations:
+        - page: NYCA
+          url: /location.html
+        - page: BEDA
+          url: /location.html
+
+    - page: Capital
+      status: green
+      info: D.C. and surrounding cities
+      url: /district.html
+      locations:
+        - page: NYCA
+          url: /location.html
+        - page: BEDA
+          url: /location.html
+    
+
+- title: Western
+  status: green
+  info: The Western United States
+  url: /region.html
+  districts: 
+    - page: Canyon
+      url: /district.html
+      locations:
+        - page: ZSYA
+          url: /location.html
+        - page: BTFA
+          url: /location.html
+
+
+- title: Southern
+  status: orange
+  info: The Southern United States
+  url: /region.html
+  districts: 
+    - page: Southeast
+      url: /district.html
+      locations:
+        - page: RMGA
+          url: /location.html
+        - page: AVLA
+          url: /location.html
+
+- title: Central
+  status: green
+  info: The Central United States
+  url: /region.html
+  districts: 
+    - page: Three Rivers
+      url: /district.html
+      locations:
+        - page: LNNA
+          url: /location.html
+        - page: PITA
+          url: /location.html
+

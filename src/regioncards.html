@@ -1,0 +1,17 @@
+---
+title: All Regions
+layout: default
+menu: regioncards
+searchcontext: in all regions
+level: home
+---
+
+<div class="container">
+	<div class="row row-cards">
+		{% for region in site.data.regions %}
+		<div class="col-md-3 col-xl-3">
+			{% include cards/regioncard.html title=region.title status=region.status show-buttons=true body=region.info %}
+		</div>
+		{% endfor %}
+	</div>
+</div>

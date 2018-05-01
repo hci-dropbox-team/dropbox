@@ -1,0 +1,62 @@
+<div class="card">
+	<div class="card-header">
+		<h3 class="card-title">Boxes</h3>
+	</div>
+	<table id="js-table-sorted" class="table table-responsive table-striped table-vcenter card-table">
+		<thead>
+		<tr>
+			<th>No.</th>
+			<th>Address</th>
+			<th>Capacity</th>
+			<th>Battery</th>
+			<th>Last Maintained</th>
+			<th>Urgency</th>
+			<th style="width: 1%"></th>
+
+		</tr>
+		</thead>
+		<tbody>
+
+		{% for box in site.data.boxes %}
+		<tr>
+				<td><span class="text-muted">{{ box.number }}</span></td>
+				<td><a href="box.html" class="text-inherit">{{ box.address }}</a></td>
+				<td>
+					{{ box.capacity }}
+				</td>
+				<td>
+					<i class="{{ box.battery-icon }}" data-toggle="tooltip" title="{{ box.battery }}"></i>  {{ box.battery }}
+				</td>
+				<td>
+					{{ box.last }}
+				</td>
+				<td>
+					<span class="status-icon bg-{{ box.status }}"></span> {{ box.urgency }}
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+<script>
+requirejs(['tablesorter', 'jquery'], function(tablesorter, $) {
+	$(document).ready(function(){
+		$('#js-table-sorted').tablesorter({
+			sortList: [[5,1]],
+			cssHeader: 'table-header',
+			cssAsc: 'table-header-asc',
+			cssDesc: 'table-header-desc',
+			headers: {
+				1: { sorter: false },
+				6: { sorter: false },
+				7: { sorter: false }
+			}
+		});
+	});
+});
+</script>

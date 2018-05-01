@@ -14,7 +14,7 @@
 		</thead>
 		<tbody>
 
-		{% for user in site.data.users limit: 8 offset: 10 %}
+		{% for user in site.data.users %}
 		<tr>
 			<td class="text-center">
 				<span class="avatar avatar-md d-block" style="background-image: url({{ user.photo }})"></span>

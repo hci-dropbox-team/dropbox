@@ -20,12 +20,11 @@
 					</div>
 				</form>
 			{% elsif include.show-buttons %}
-				<a href="#" class="btn btn-primary btn-sm">Explore</a>
-			{% elsif include.show-switch %}
-			<label class="custom-switch m-0">
-				<input type="checkbox" value="1" class="custom-switch-input" checked>
-				<span class="custom-switch-indicator"></span>
-			</label>
+				<a href="/region.html" class="btn btn-primary">Explore</a>
+				<label class="custom-switch m-0">
+					<input type="checkbox" name="icon-input" class="selectgroup-input">
+					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
+				</label>
 			{% elsif include.options %}
 				{{ include.options }}
 			{% else %}
