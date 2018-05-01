@@ -1,0 +1,590 @@
+<!doctype html>
+
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Language" content="en" />
+
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="240">
+
+<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+
+<!-- Generated: 2018-05-01 10:05:05 -0500 -->
+
+<title>Location ORHA - FedEx Dropbox Diagnostics</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+<script src="./assets/js/require.min.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: '.'
+    });
+</script>
+
+<!-- Dashboard Core -->
+<link href="./assets/css/dashboard.css" rel="stylesheet" />
+<script src="./assets/js/dashboard.js"></script>
+
+
+<!-- c3.js Charts Plugin -->
+<link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+<script src="./assets/plugins/charts-c3/plugin.js"></script>
+
+<!-- Google Maps Plugin -->
+<link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+<script src="./assets/plugins/maps-google/plugin.js"></script>
+
+<!-- Input Mask Plugin -->
+
+<script src="./assets/plugins/input-mask/plugin.js"></script>
+
+</head>
+<body class="">
+
+<div class="page">
+	<div class="page-main">
+	
+<div class="header py-4">
+	<div class="container">
+		<div class="d-flex">
+			<h3 class="text-center"> Location ORHA</h3>
+			<div class="d-flex order-lg-2 ml-auto">
+				<div class="dropdown">
+					<a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+						<span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
+						<span class="ml-2 d-none d-lg-block">
+							<span class="text-default">Jane Pearson</span>
+							<small class="text-muted d-block mt-1">Location Manager</small>
+						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+						<a class="dropdown-item" href="#">
+							<i class="dropdown-icon fe fe-settings"></i> Settings
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<i class="dropdown-icon fe fe-help-circle"></i> Need help?
+						</a>
+						<a class="dropdown-item" href="#">
+							<i class="dropdown-icon fe fe-log-out"></i> Sign out
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+				<span class="header-toggler-icon"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-3 ml-auto">
+				<form class="input-icon my-3 my-lg-0">
+					
+					<input type="search" class="form-control header-search" placeholder="Search in ORHA boxes&hellip;" tabindex="1"> 
+					<div class="input-icon-addon">
+						<i class="fe fe-search"></i>
+					</div>
+					
+				</form>
+			</div>
+			<div class="col-lg order-lg-first">
+				<ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+	
+	
+
+	
+	<li class="nav-item">
+		
+		
+		<a href="./index.html" class="nav-link"><i class="fe fe-star"></i> Favorites</a>
+
+		
+	</li>
+	
+	<li class="nav-item">
+		
+		
+		<a href="./regioncards.html" class="nav-link active"><i class="fe fe-home"></i> Manual Navigation</a>
+
+		
+	</li>
+	
+</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row align-items-center">
+		<div class="col-lg order-lg-first">
+			
+			
+			
+			
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item" aria-current="page"><a href="/regioncards.html">Home</a></li>
+					<li class="breadcrumb-item" aria-current="page"><a href="/region.html">Eastern region</a></li>
+					<li class="breadcrumb-item" aria-current="page"><a href="/district.html">Bostonian district</a></li>
+					<li class="breadcrumb-item active" aria-current="page">ORHA location</li>
+				</ol>
+			</nav>
+			
+			
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="my-3 my-md-5">
+		
+
+		<div class="container">
+
+	<div class="row row-cards">
+		<div class="col-xs-6 col-md-4">
+			<div class="card">
+	<div class="card-header">
+		<h3 class="card-title">Location ORHA</h3>
+	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=Museum+of+Fine+Arts,+Boston&zoom=13&size=400x400&markers=color:red%7CMuseum+of+Fine+Arts,+Boston&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
+</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				<div class="card">
+					<div class="card-header">
+						<h3 class="card-title">Battery Levels</h3>
+					</div>
+					<div class="card-body">
+						<div id="chart-battery" style="height: 16rem"></div>
+					</div>
+				</div>
+				<script>
+require(['c3', 'jquery'], function(c3, $) {
+	$(document).ready(function(){
+		var chart = c3.generate({
+			bindto: '#chart-battery', // id of chart wrapper
+			data: {
+				columns: [
+				    // each columns data
+					['data1', 4],
+					['data2', 3],
+					['data3', 3],
+					['data4', 2]
+				],
+				type: 'pie', // default type of chart
+				colors: { 
+					'data1': tabler.colors["green-darker"],
+					'data2': tabler.colors["green-dark"],
+					'data3': tabler.colors["green"],
+					'data4': tabler.colors["green-light"]
+				},
+				names: {
+				    // name of each serie
+					'data1': 'Great',
+					'data2': 'Good',
+					'data3': 'Caution',
+					'data4': 'Critical'
+				}
+			},
+			axis: {
+			},
+			legend: {
+                show: false, //hide legend
+			},
+			padding: {
+				bottom: 0,
+				top: 0
+			},
+		});
+	});
+});
+</script>
+			
+			
+			
+			
+			
+				<div class="card">
+					<div class="card-header">
+						<h3 class="card-title">Alert Levels</h3>
+					</div>
+					<div class="card-body">
+						<div id="chart-alert" style="height: 16rem"></div>
+					</div>
+				</div>
+				<script>
+require(['c3', 'jquery'], function(c3, $) {
+	$(document).ready(function(){
+		var chart = c3.generate({
+			bindto: '#chart-alert', // id of chart wrapper
+			data: {
+				columns: [
+				    // each columns data
+					['data1', 2],
+					['data2', 7],
+					['data3', 3]
+				],
+				type: 'pie', // default type of chart
+				colors: { 
+					'data1': tabler.colors["red"],
+					'data2': tabler.colors["green"],
+					'data3': tabler.colors["orange"]
+				},
+				names: {
+				    // name of each serie
+					'data1': 'High',
+					'data2': 'Medium',
+					'data3': 'Low'
+				}
+			},
+			axis: {
+			},
+			legend: {
+                show: false, //hide legend
+			},
+			padding: {
+				bottom: 0,
+				top: 0
+			},
+		});
+	});
+});
+</script>
+			
+			
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<div class="card">
+	<div class="card-header">
+		<h3 class="card-title">Boxes</h3>
+	</div>
+	<table id="js-table-sorted" class="table table-responsive table-striped table-vcenter card-table">
+		<thead>
+		<tr>
+			<th>No.</th>
+			<th>Address</th>
+			<th>Capacity</th>
+			<th>Battery</th>
+			<th>Last Maintained</th>
+			<th>Urgency</th>
+			<th style="width: 1%"></th>
+
+		</tr>
+		</thead>
+		<tbody>
+
+		
+		<tr>
+				<td><span class="text-muted">1</span></td>
+				<td><a href="box.html" class="text-inherit">4000 Fourth Street</a></td>
+				<td>
+					75%
+				</td>
+				<td>
+					<i class="fa fa-battery-half" data-toggle="tooltip" title="50%"></i>  50%
+				</td>
+				<td>
+					19 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-orange"></span> (2) medium
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">11</span></td>
+				<td><a href="box.html" class="text-inherit">550 Huntington Ave</a></td>
+				<td>
+					100%
+				</td>
+				<td>
+					<i class="fa fa-battery-quarter" data-toggle="tooltip" title="25%"></i>  25%
+				</td>
+				<td>
+					19 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-red"></span> (3) high
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">20</span></td>
+				<td><a href="box.html" class="text-inherit">44 Four Lane</a></td>
+				<td>
+					20%
+				</td>
+				<td>
+					<i class="fa fa-battery-full" data-toggle="tooltip" title="92%"></i>  92%
+				</td>
+				<td>
+					19 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">34</span></td>
+				<td><a href="box.html" class="text-inherit">1000 Four Lane</a></td>
+				<td>
+					12%
+				</td>
+				<td>
+					<i class="fa fa-battery-full" data-toggle="tooltip" title="95%"></i>  95%
+				</td>
+				<td>
+					25 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">702</span></td>
+				<td><a href="box.html" class="text-inherit">145 Yeven Drive</a></td>
+				<td>
+					20%
+				</td>
+				<td>
+					<i class="fa fa-battery-three-quarters" data-toggle="tooltip" title="78%"></i>  78%
+				</td>
+				<td>
+					25 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">100</span></td>
+				<td><a href="box.html" class="text-inherit">23 Ninth Blvd</a></td>
+				<td>
+					23%
+				</td>
+				<td>
+					<i class="fa fa-battery-three-quarters" data-toggle="tooltip" title="74%"></i>  74%
+				</td>
+				<td>
+					21 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">102</span></td>
+				<td><a href="box.html" class="text-inherit">12 First Drive</a></td>
+				<td>
+					50%
+				</td>
+				<td>
+					<i class="fa fa-battery-half" data-toggle="tooltip" title="40%"></i>  40%
+				</td>
+				<td>
+					21 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-orange"></span> (2) medium
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">104</span></td>
+				<td><a href="box.html" class="text-inherit">111 Second Lane</a></td>
+				<td>
+					??
+				</td>
+				<td>
+					<i class="fa fa-battery-empty" data-toggle="tooltip" title="??"></i>  ??
+				</td>
+				<td>
+					17 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-red"></span> (3) high
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">105</span></td>
+				<td><a href="box.html" class="text-inherit">90 Cumberland Road</a></td>
+				<td>
+					10%
+				</td>
+				<td>
+					<i class="fa fa-battery-full" data-toggle="tooltip" title="94%"></i>  94%
+				</td>
+				<td>
+					27 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">106</span></td>
+				<td><a href="box.html" class="text-inherit">40 Snead Blvd</a></td>
+				<td>
+					15%
+				</td>
+				<td>
+					<i class="fa fa-battery-three-quarters" data-toggle="tooltip" title="80%"></i>  80%
+				</td>
+				<td>
+					25 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">107</span></td>
+				<td><a href="box.html" class="text-inherit">76 Tory Road</a></td>
+				<td>
+					23%
+				</td>
+				<td>
+					<i class="fa fa-battery-half" data-toggle="tooltip" title="48%"></i>  48%
+				</td>
+				<td>
+					24 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-orange"></span> (2) medium
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		<tr>
+				<td><span class="text-muted">108</span></td>
+				<td><a href="box.html" class="text-inherit">89 Goddard Lane</a></td>
+				<td>
+					33%
+				</td>
+				<td>
+					<i class="fa fa-battery-three-quarters" data-toggle="tooltip" title="74%"></i>  74%
+				</td>
+				<td>
+					24 April 2018
+				</td>
+				<td>
+					<span class="status-icon bg-green"></span> (1) low
+				</td>
+
+				<td class="text-right">
+					<a href="/box.html" class="btn btn-secondary btn-sm">Explore</a>
+				</td>
+			</tr>
+		
+		</tbody>
+	</table>
+</div>
+
+<script>
+requirejs(['tablesorter', 'jquery'], function(tablesorter, $) {
+	$(document).ready(function(){
+		$('#js-table-sorted').tablesorter({
+			sortList: [[5,1]],
+			cssHeader: 'table-header',
+			cssAsc: 'table-header-asc',
+			cssDesc: 'table-header-desc',
+			headers: {
+				1: { sorter: false },
+				6: { sorter: false },
+				7: { sorter: false }
+			}
+		});
+	});
+});
+</script>
+		</div>
+	</div>
+
+
+</div>
+
+	</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
