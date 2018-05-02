@@ -1,5 +1,5 @@
 - title: Eastern
-  status: green
+  status: blue
   info: The Eastern United States.
   url: /region.html
   level: region
@@ -18,7 +18,7 @@
 
 
 - title: NYCA
-  status: green
+  status: blue
   info: Station 100 in NY.
   url: /location.html
   level: location
@@ -50,7 +50,7 @@
   capacity: 20%
   battery: 92%
   battery-icon: fa fa-battery-full
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 44 Four Lane
@@ -61,7 +61,7 @@
   capacity: 12%
   battery: 95%
   battery-icon: fa fa-battery-full
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 1000 Four Lane
@@ -72,7 +72,7 @@
   capacity: 20%
   battery: 78%
   battery-icon: fa fa-battery-three-quarters
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 145 Yeven Drive

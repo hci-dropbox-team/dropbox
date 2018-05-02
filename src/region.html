@@ -14,7 +14,7 @@ level: region
 		{% if region.title=="Eastern" %}
 		{% for district in region.districts %}
 		<div class="col-md-3 col-xl-3">
-			{% include cards/districtcard.html title=district.page status=district.status show-buttons=true body=district.info %}
+			{% include cards/districtcard.html title=district.page status=district.status show-buttons=true body=district.info coords=district.coords %}
 		</div>
 		{% endfor %}
 		{% endif %}

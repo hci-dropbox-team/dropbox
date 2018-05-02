@@ -16,7 +16,7 @@ level: district
 		{% if district.page=="Bostonian" %}
 		{% for location in district.locations %}
 		<div class="col-md-3 col-xl-3">
-			{% include cards/locationcard.html title=location.page status=location.status show-buttons=true body=location.info %}
+			{% include cards/locationcard.html title=location.page status=location.status show-buttons=true body=location.info coords=location.coords %}
 		</div>
 		{% endfor %}
 		{% endif %}

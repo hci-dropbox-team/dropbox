@@ -37,6 +37,7 @@
 		</div>
 		{% endunless %}
 	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center={{ include.coords }}&zoom=7&size=400x400&markers=color:red%7C{{ include.coords }}&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
 	{% if include.alert %}
 	<div class="card-alert alert alert-{{ include.alert-type | default: 'success' }} mb-0">
 		{{ include.alert }}
@@ -44,7 +45,8 @@
 	{% endif %}
 	<div class="card-body">
 		{% if include.body %}
-		{{ include.body }}
+		
+		<h5 class="text-center"> {{ include.body }}</h5>
 		{% elsif include.show-loader %}
 		<div class="dimmer active">
 			<div class="loader"></div>
