@@ -225,3 +225,4 @@ theme-plugins:
 #  weather:
 #    name: Weather
 #    files: [css]
+theme: jekyll-theme-slate
