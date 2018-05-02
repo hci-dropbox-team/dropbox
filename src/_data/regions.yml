@@ -1,58 +1,71 @@
 - title: Eastern
-  status: green
+  status: blue
   info: The Eastern United States
   url: /region.html
+  coords: 40.397304,-76.017714
   districts:
     - page: Bostonian
       status: orange
       info: The New England States
       url: /district.html
+      coords: 42.345793,-71.061100
       locations:
         - page: ORHA
           status: orange
           info: Station 16 in MA
           url: /location.html
+          coords: 42.339168,-71.094060
         - page: BEDA
           status: orange
           info: Station 21 in MA
           url: /location.html
+          coords: 42.454188,-71.062561
         - page: NZWA
-          status: green
+          status: blue
           info: Station 23 in MA
           url: /location.html
+          coords: 42.324709,-71.208613
         - page: BVYA
-          status: green
+          status: blue
           info: Station 26 in MA
           url: /location.html
+          coords: 42.281112,-71.615514
         - page: PVDA
-          status: green
+          status: blue
           info: Station 29 in RI
           url: /location.html
+          coords: 41.810488,-71.444846
         - page: PSMA
-          status: green
+          status: blue
           info: Station 38 in NH
           url: /location.html
+          coords: 42.976970,-71.488446
         - page: BGRA
-          status: green
+          status: blue
           info: Station 44 in ME
           url: /location.html
+          coords: 44.185680,-69.894510
         - page: AUGA
-          status: green
+          status: blue
           info: Station 221 in ME
           url: /location.html
+          coords: 45.588556,-68.575651
         - page: OWDA
-          status: green
+          status: blue
           info: Station 238 in MA
           url: /location.html
+          coords: 42.215235,-72.986099
         - page: CEFA
-          status: green
+          status: blue
           info: Station 269 in MA
+          coords: 42.585507,-72.245610
           url: /location.html
 
     - page: Big Apple
-      status: green
+      status: blue
       info: New York City and surrounding cities
       url: /district.html
+      coords: 40.700496,-74.007548
       locations:
         - page: NYCA
           url: /location.html
@@ -60,9 +73,10 @@
           url: /location.html
 
     - page: Capital
-      status: green
+      status: blue
       info: D.C. and surrounding cities
       url: /district.html
+      coords: 38.886743,-77.038949
       locations:
         - page: NYCA
           url: /location.html
@@ -71,9 +85,10 @@
     
 
 - title: Western
-  status: green
+  status: blue
   info: The Western United States
   url: /region.html
+  coords: 40.433597,-115.269502
   districts: 
     - page: Canyon
       url: /district.html
@@ -88,6 +103,7 @@
   status: orange
   info: The Southern United States
   url: /region.html
+  coords: 32.556260,-94.059118
   districts: 
     - page: Southeast
       url: /district.html
@@ -98,9 +114,10 @@
           url: /location.html
 
 - title: Central
-  status: green
+  status: blue
   info: The Central United States
   url: /region.html
+  coords: 43.292724,-98.371431
   districts: 
     - page: Three Rivers
       url: /district.html

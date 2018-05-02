@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-version=0.0.32
-
-echo "Version $version"
-
-npm run dist
+sudo bundle exec jekyll build
 git add .
-git commit -am "version $version"
-npm version $version
+git commit -am "new version"
 git push origin master && git push origin master --tags
 
 npm run publish-dist

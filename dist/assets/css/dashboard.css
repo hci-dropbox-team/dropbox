@@ -10387,6 +10387,9 @@ body.fixed-header .header {
 }
 
 .footer {
+  position: sticky;
+  height: 240px;
+  line-height: 240px;
   background: #fff;
   border-top: 1px solid rgba(0, 40, 100, 0.12);
   font-size: 0.875rem;
@@ -13836,7 +13839,7 @@ Dimmer
 }
 
 .dimmer.active .dimmer-content {
-  opacity: .04;
+  opacity: .5;
   pointer-events: none;
 }
 

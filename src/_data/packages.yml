@@ -18,7 +18,7 @@
   origin: 23 Poplar Road
   destination: 89 Tory Road
   timesince: 1 day
-  weight: 5.0 lb
+  weight: 5.1 lb
   box: 11
   address: 550 Huntington Ave
 
@@ -33,103 +33,103 @@
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.2 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.0 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.6 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.3 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.3 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.3 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.3 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 5 lb
+  timesince: 6 hours
+  weight: 5.4 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 1 lb
+  timesince: 6 hours
+  weight: 1.4 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 4 lb
+  timesince: 6 hours
+  weight: 4.9 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 3 lb
+  timesince: 6 hours
+  weight: 3.9 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 2 lb
+  timesince: 6 hours
+  weight: 2.6 lb
   box: 11
   address: 550 Huntington Ave
 
 - number: 11111
   origin: 1 Test Street
   destination: 2 Test Blvd
-  timesince: 6 hours days
-  weight: 4 lb
+  timesince: 6 hours
+  weight: 4.2 lb
   box: 11
   address: 550 Huntington Ave

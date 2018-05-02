@@ -22,7 +22,7 @@
   capacity: 20%
   battery: 92%
   battery-icon: fa fa-battery-full
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 44 Four Lane
@@ -32,7 +32,7 @@
   capacity: 12%
   battery: 95%
   battery-icon: fa fa-battery-full
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 1000 Four Lane
@@ -42,7 +42,7 @@
   capacity: 20%
   battery: 78%
   battery-icon: fa fa-battery-three-quarters
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 145 Yeven Drive
@@ -52,7 +52,7 @@
   capacity: 23%
   battery: 74%
   battery-icon: fa fa-battery-three-quarters
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 23 Ninth Blvd
@@ -82,7 +82,7 @@
   capacity: 10%
   battery: 94%
   battery-icon: fa fa-battery-full
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 90 Cumberland Road
@@ -92,7 +92,7 @@
   capacity: 15%
   battery: 80%
   battery-icon: fa fa-battery-three-quarters
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 40 Snead Blvd
@@ -112,7 +112,7 @@
   capacity: 33%
   battery: 74%
   battery-icon: fa fa-battery-three-quarters
-  status: green
+  status: blue
   urgency: (1) low
   location: ORHA
   address: 89 Goddard Lane

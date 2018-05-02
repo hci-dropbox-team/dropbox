@@ -21,7 +21,7 @@
 
 <!-- Generated: 2018-05-02 11:00:12 -0500 -->
 
-<title>Maps - FedEx Dropbox Diagnostics</title>
+<title>All Regions - FedEx Dropbox Diagnostics</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -58,7 +58,7 @@
 <div class="header py-4">
 	<div class="container">
 		<div class="d-flex">
-			<h3 class="text-center"> Maps</h3>
+			<h3 class="text-center"> All Regions</h3>
 			<div class="d-flex order-lg-2 ml-auto">
 				<div class="dropdown">
 					<a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
@@ -96,6 +96,11 @@
 			<div class="col-lg-3 ml-auto">
 				<form class="input-icon my-3 my-lg-0">
 					
+					<input type="search" class="form-control header-search" placeholder="Search in all regions&hellip;" tabindex="1"> 
+					<div class="input-icon-addon">
+						<i class="fe fe-search"></i>
+					</div>
+					
 				</form>
 			</div>
 			<div class="col-lg order-lg-first">
@@ -115,7 +120,7 @@
 	<li class="nav-item">
 		
 		
-		<a href="./regioncards.html" class="nav-link"><i class="fe fe-home"></i> Manual Navigation</a>
+		<a href="./regioncards.html" class="nav-link active"><i class="fe fe-home"></i> Manual Navigation</a>
 
 		
 	</li>
@@ -131,6 +136,12 @@
 	<div class="row align-items-center">
 		<div class="col-lg order-lg-first">
 			
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">Home</li>
+				</ol>
+			</nav>
+			
 			
 			
 			
@@ -144,74 +155,137 @@
 	<div class="my-3 my-md-5">
 		
 
-		<div class="map-header">
-	<div class="map-header-layer" id="map-background"></div>
-</div>
-
-
-
-<div class="container">
-
+		<div class="container">
 	<div class="row row-cards">
-		<div class="col-lg-4 col-md-6">
+		
+		<div class="col-md-3 col-xl-3">
 			<div class="card">
+	
+	<div class="card-status bg-blue"></div>
+	
+
 	<div class="card-header">
-		<h3 class="card-title">Location </h3>
+		<h3 class="card-title">Eastern</h3>
+
+		
+		<div class="card-options">
+			
+				<a href="/region.html" class="btn btn-primary">Explore</a>
+				<label class="custom-switch m-0">
+					<input type="checkbox" name="icon-input" class="selectgroup-input">
+					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
+				</label>
+			
+		</div>
+		
 	</div>
-	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=Museum+of+Fine+Arts,+Boston&zoom=13&size=400x400&markers=color:red%7CMuseum+of+Fine+Arts,+Boston&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
-</div>
-			<div class="card">
-	<div class="card-header">
-		<h3 class="card-title">Germany map</h3>
-	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=40.397304,-76.017714&zoom=4&size=500x500&markers=color:red%7C40.397304,-76.017714&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
+	
 	<div class="card-body">
-		<div class="map map-square">
-			<div class="map-content" id="map-germany-svg"></div>
-		</div>
+		
+		<h5 class="text-center">The Eastern United States</h5>
+		
 	</div>
+	
 </div>
-
-<script>
-require(['jquery', 'vector-map', 'vector-map-de'], function(){
-    $(document).ready(function(){
-        var data = {"DE-BE":11,"DE-ST":43,"DE-RP":4,"DE-BB":65,"DE-NI":4,"DE-MV":24,"DE-TH":45,"DE-BW":7,"DE-HH":45,"DE-SH":9,"DE-NW":8,"DE-SN":27,"DE-HB":42,"DE-SL":85,"DE-BY":24,"DE-HE":66};
-        var markers = false;
-
-        $('#map-germany-svg').vectorMap({
-            map: 'de_merc',
-            zoomButtons : false,
-            zoomOnScroll: false,
-            panOnDrag: false,
-            backgroundColor: 'transparent',
-            markers: markers,
-            markerStyle: {
-                initial: {
-                    fill: tabler.colors.blue,
-                    stroke: '#fff',
-                    "stroke-width": 1,
-                    r: 5
-                },
-            },
-            onRegionTipShow: function(e, el, code, f){
-                el.html(el.html() + (data[code] ? ': <small>' + data[code]+'</small>' : ''));
-            },
-            series: {
-                regions: [{
-                    values: data,
-                    scale: ['#EFF3F6', tabler.colors.blue],
-                    normalizeFunction: 'polynomial'
-                }]
-            },
-            regionStyle: {
-                initial: {
-                    fill: '#F4F4F4'
-                }
-            }
-        });
-    });
-});
-</script>
 		</div>
+		
+		<div class="col-md-3 col-xl-3">
+			<div class="card">
+	
+	<div class="card-status bg-blue"></div>
+	
+
+	<div class="card-header">
+		<h3 class="card-title">Western</h3>
+
+		
+		<div class="card-options">
+			
+				<a href="/region.html" class="btn btn-primary">Explore</a>
+				<label class="custom-switch m-0">
+					<input type="checkbox" name="icon-input" class="selectgroup-input">
+					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
+				</label>
+			
+		</div>
+		
+	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=40.433597,-115.269502&zoom=4&size=500x500&markers=color:red%7C40.433597,-115.269502&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
+	
+	<div class="card-body">
+		
+		<h5 class="text-center">The Western United States</h5>
+		
+	</div>
+	
+</div>
+		</div>
+		
+		<div class="col-md-3 col-xl-3">
+			<div class="card">
+	
+	<div class="card-status bg-orange"></div>
+	
+
+	<div class="card-header">
+		<h3 class="card-title">Southern</h3>
+
+		
+		<div class="card-options">
+			
+				<a href="/region.html" class="btn btn-primary">Explore</a>
+				<label class="custom-switch m-0">
+					<input type="checkbox" name="icon-input" class="selectgroup-input">
+					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
+				</label>
+			
+		</div>
+		
+	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=32.556260,-94.059118&zoom=4&size=500x500&markers=color:red%7C32.556260,-94.059118&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
+	
+	<div class="card-body">
+		
+		<h5 class="text-center">The Southern United States</h5>
+		
+	</div>
+	
+</div>
+		</div>
+		
+		<div class="col-md-3 col-xl-3">
+			<div class="card">
+	
+	<div class="card-status bg-blue"></div>
+	
+
+	<div class="card-header">
+		<h3 class="card-title">Central</h3>
+
+		
+		<div class="card-options">
+			
+				<a href="/region.html" class="btn btn-primary">Explore</a>
+				<label class="custom-switch m-0">
+					<input type="checkbox" name="icon-input" class="selectgroup-input">
+					<span class="selectgroup-button selectgroup-button-icon"><i class="fe fe-star"></i></span>
+				</label>
+			
+		</div>
+		
+	</div>
+	<div class="card-map card-map-placeholder" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=43.292724,-98.371431&zoom=4&size=500x500&markers=color:red%7C43.292724,-98.371431&key=AIzaSyCkOU-YsBemD509XzrNpDlp-dBRlrm1FHM)"></div>
+	
+	<div class="card-body">
+		
+		<h5 class="text-center">The Central United States</h5>
+		
+	</div>
+	
+</div>
+		</div>
+		
 	</div>
 </div>
 
